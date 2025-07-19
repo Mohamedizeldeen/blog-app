@@ -13,7 +13,13 @@ use App\Models\Event;
 
 // صفحة الترحيب (غير محمية)
 Route::get('/', function () {
-    return view('welcome');
+    $interviews = Interview::latest()->take(6)->get();
+    $ads = Ad::latest()->take(4)->get();
+    $podcasts = Podcast::latest()->take(4)->get();
+    $events = Event::latest()->take(5)->get();
+    $featuredInterview = Interview::latest()->first();
+    
+    return view('welcome', compact('interviews', 'ads', 'podcasts', 'events', 'featuredInterview'));
 });
 
 // Login Routes (غير محمية)
