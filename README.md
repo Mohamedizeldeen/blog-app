@@ -28,13 +28,6 @@ This is a comprehensive content management platform built with Laravel 11 that s
 - **Dashboard**: Centralized content management interface
 - **Category Management**: Organize content by categories
 
-### 📱 **User Experience**
-- **Smooth Navigation**: Scroll-based navigation with anchor links
-- **Interactive Elements**: Hover effects and button animations
-- **Content Categories**: Organized browsing experience
-- **Newsletter Signup**: Community engagement features
-- **Social Media Integration**: Share and connect functionality
-
 ## Tech Stack
 ### Backend
 - **Laravel 11** - PHP framework for robust backend development
